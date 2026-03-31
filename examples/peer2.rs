@@ -1,7 +1,7 @@
+use rsedp::{CodecV1, MessageStorage, ReliableUdpConnection};
 use std::path::PathBuf;
 use std::sync::Arc;
 use tokio::net::UdpSocket;
-use zipvpn_common::comms::{CodecV1, MessageStorage, ReliableUdpConnection};
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {

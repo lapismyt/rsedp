@@ -189,7 +189,7 @@ mod tests {
         .await
         .unwrap();
 
-        let test_msg = "Hello, VPN!".to_string();
+        let test_msg = "Hello!".to_string();
         conn1.send(&test_msg).await.unwrap();
 
         let mut buf = [0u8; 1024];
