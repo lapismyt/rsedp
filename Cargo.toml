@@ -1,0 +1,16 @@
+[package]
+name = "rsedp"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+borsh = { version = "1.6.1", features = ["derive"] }
+chacha20poly1305 = "0.10.1"
+log = "0.4.29"
+rand = "0.10.0"
+redb = "3.1.1"
+thiserror = "2.0.18"
+tokio = { version = "1.50.0", features = ["full"] }
+
+[dev-dependencies]
+tempfile = "3.27.0"
