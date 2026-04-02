@@ -3,9 +3,8 @@ use crate::error::{CodecError, ConnectionError};
 use crate::storage::MessageStorage;
 use borsh::{BorshDeserialize, BorshSerialize};
 use log::{debug, error};
-use std::net::SocketAddr;
 use std::sync::Arc;
-use tokio::net::UdpSocket;
+use tokio::net::{SocketAddr, UdpSocket};
 use tokio::time::{self, Duration};
 
 #[derive(BorshSerialize, BorshDeserialize, Debug, Clone)]
